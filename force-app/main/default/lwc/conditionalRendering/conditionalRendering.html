@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Conditional Details" class="slds-m-around_medium">
+        <div>
+        <lightning-input type="checkbox" label="Show details" onclick={handleClick}></lightning-input>
+        <template if:true={areDetailVisible}>
+            <div>
+                this is a true block
+            </div>
+        </template>
+        <template if:false={areDetailVisible}>
+            <div>
+                this is a false block
+            </div>
+        </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,10 @@
+<template>
+    <lightning-card>    
+        <h1>Hello {firstName} {lastName}!</h1>
+       <lightning-input name="fname" label="First Name" value={firstName} ></lightning-input>
+        <br/>
+        <lightning-input name="lname" label="Last Name" value={lastName} ></lightning-input>
+        <br/>
+        <lightning-button label="Click Me" onclick={handleClick}></lightning-button>
+    </lightning-card>
+</template>
